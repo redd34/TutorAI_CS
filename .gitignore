@@ -400,3 +400,6 @@ FodyWeavers.xsd
 
 # Local storage for development
 local-storage/
+
+# Test configuration files with API keys
+**/appsettings.Test.json
