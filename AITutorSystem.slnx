@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AITutorSystem.AI/AITutorSystem.AI.csproj" />
+    <Project Path="src/AITutorSystem.Core/AITutorSystem.Core.csproj" />
+    <Project Path="src/AITutorSystem.Frontend/AITutorSystem.Frontend.csproj" />
+    <Project Path="src/AITutorSystem.Lambda/AITutorSystem.Lambda.csproj" />
+    <Project Path="src/AITutorSystem.VectorDB/AITutorSystem.VectorDB.csproj" />
+  </Folder>
+</Solution>
