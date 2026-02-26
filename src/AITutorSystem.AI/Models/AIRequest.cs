@@ -19,13 +19,13 @@ public class AIRequest
     /// Gets or sets the temperature for response randomness (0.0 = deterministic, 1.0 = creative).
     /// Default is 0.7.
     /// </summary>
-    public double Temperature { get; set; } = 0.7;
+    public double Temperature { get; set; } = 0.3;
 
     /// <summary>
     /// Gets or sets the maximum number of tokens to generate.
     /// Default is 1000.
     /// </summary>
-    public int MaxTokens { get; set; } = 1000;
+    public int MaxTokens { get; set; } = 10000;
 
     /// <summary>
     /// Gets or sets additional provider-specific parameters.

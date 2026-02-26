@@ -70,7 +70,7 @@ This implementation plan breaks down the AI Tutor System into discrete, incremen
     - Add error handling and response parsing
     - _Requirements: 10.2_
   
-  - [ ]* 4.3 Write unit tests for OpenRouterProvider
+  - [ ] 4.3 Write unit tests for OpenRouterProvider
     - Test API request formatting
     - Test response parsing
     - Test error handling
