@@ -14,6 +14,7 @@ AITutorSystem/
 │   ├── AITutorSystem.Lambda/           # AWS Lambda handlers
 │   └── AITutorSystem.Frontend/         # Chat interface
 ├── tests/
+│   └── AITutorSystem.Memory.Tests/    # Unit tests for Memory module
 ├── appsettings.json                    # Local development configuration
 ├── appsettings.Lambda.json             # AWS Lambda configuration
 └── AITutorSystem.sln                   # Solution file
@@ -66,6 +67,34 @@ dotnet run
 
 ### Deploy to AWS Lambda
 (Deployment instructions will be added after Lambda handlers are implemented)
+
+## Running Tests
+
+The project includes unit tests for the Memory module. More test projects will be added as other modules are implemented.
+
+### Running All Tests
+```bash
+dotnet test
+```
+
+### Running Specific Test Project
+```bash
+# Run Memory module tests
+dotnet test tests/AITutorSystem.Memory.Tests/AITutorSystem.Memory.Tests.csproj
+
+# Run with detailed output
+dotnet test tests/AITutorSystem.Memory.Tests/AITutorSystem.Memory.Tests.csproj --verbosity normal
+```
+
+### Test Structure
+- **Test projects** are located in the `tests/` directory
+- Each module has its own test project (e.g., `AITutorSystem.Memory.Tests`)
+- Tests follow xUnit framework conventions
+- Test projects use the same target framework (net10.0) as the main projects
+
+### Current Test Coverage
+- **LocalStorageProvider**: Comprehensive tests for file creation, reading, updating, deletion, and error handling
+- More tests will be added for other components as they are implemented
 
 ## Architecture
 
